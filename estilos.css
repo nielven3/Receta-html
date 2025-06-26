@@ -1,0 +1,209 @@
+/* Pseudoelemento para decorar */
+    .decorado::before {
+      content: "🍪 ";
+      color: #d4af37;
+      font-size: 1.2em;
+    }
+
+    .decorado::before{
+      content: '🍪';
+      color:#a47d52
+      
+    }
+
+    h1{
+       color: #312601;
+     
+   } 
+  
+     /* letras animadas */
+   span {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    top: 20px;
+    color: #0a0a0a;
+    display: inline-block;
+    font-size: 0.8em;
+    text-shadow:0 1px 0 #ef0707, 0 2px 0 #caec07, 0 3px 0 #2fb904, 0 4px 0 #1607f0, 0 5px 0 #f306d3,0 6px 0 #511c1c,0 7px 0 #fdf2f2,0 8px 0 #fdf2f2, 0 9px 0 #fdf2f2, 0 10px 0 #fdf2f2,  0 11px 0 #fdf2f2,  0 12px 0 #fdf2f2,  0 13px 0 #fdf2f2, 0 14px 0 #fdf2f2, 0 15px 0 #fdf2f2, 0 16px 0 transparent, 0 17px 0 transparent, 0 18px 0 transparent, 0 19px 0 transparent, 0 20px 0 transparent, 0 21px 0 transparent, 0 22px 0 transparent,0 23px 0 transparent, 0 24px 0 transparent, 0 25px 0 transparent, 0 26px 0 transparent, 0 27px 0 transparent, 0 28px 0 transparent,0 29px 0 transparent,  0 30px 30px rgb(29, 28, 28);
+    animation: bounce 0.4s  ease infinite
+    alternate;
+   }
+
+  
+   h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+   }
+   h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+   }
+   h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+   }
+   h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+   }
+   h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+   }
+   h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+   }
+   h1 span:nth-child(8) {
+    animation-delay: 0.7s; 
+  }
+
+   h1 span:nth-child(9) {
+    animation-delay: 0.8s; 
+  }
+    
+   h1 span:nth-child(10) {
+    animation-delay: 0.9s; 
+  }
+    
+   h1 span:nth-child(11) {
+    animation-delay: 0.9s; 
+  }
+
+   h1 span:nth-child(12) {
+    animation-delay: 10s; 
+  }
+    
+   h1 span:nth-child(13) {
+    animation-delay: 11s; 
+  }
+
+   h1 span:nth-child(14) {
+    animation-delay: 12s; 
+  }
+    
+   h1 span:nth-child(15) {
+    animation-delay: 13s; 
+     }
+
+
+
+  
+
+
+  @keyframes bounce {
+    100%{
+      top: -20px;
+      text-shadow:0 1px 0 #ef0707, 0 2px 0 #caec07, 0 3px 0 #2fb904, 0 4px 0 #1607f0, 0 5px 0 #f306d3,0 6px 0 #511c1c,0 7px 0 #fdf2f2,0 8px 0 #fdf2f2, 0 9px 0 #fdf2f2, 0 10px 0 #fdf2f2, 0 11px 0 transparent, 0 12px 0 transparent, 0 13px 0 transparent, 0 14px 0 transparent, 0 15px 0 transparent, 0 16px 0 transparent,0 17px 0 transparent, 0 18px 0 transparent,0 19px 0 transparent, 0 30px 30px rgb(29, 28, 28);
+      }
+
+  }
+   
+
+
+li{
+    color: #3b2d01
+
+}
+
+     
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
+
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+
+}
+/* General */
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #806d06;
+      margin: 0;
+      padding: 20px;
+  
+}
+  
+
+/* Caja genÃ©rica */
+.box {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #0b0b0b;
+  max-width: 800px;
+  background-color: #9c9264;
+  border-radius: 8px;
+}
+
+/* Encabezado */
+.header {
+  text-align: start;
+  background-image: url(logo-jpg.jpg);
+  background-position: center;
+  height: 20vh;
+
+  border-color: #111111;
+}
+
+/* NavegaciÃ³n */
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #d84315;
+
+}
+
+.nav a:hover {
+  color:#fafafa
+}
+
+/* Imagen principal */
+.image-section {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Secciones */
+.section h2 {
+  margin-bottom: 25px;
+  color: #4e342e;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+/* Formulario */
+.form input, .form textarea {
+  width: 96%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+
+
+.form input[type="submit"] {
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #e65100;
+}
+
+/* Pie de pÃ¡gina */
+.footer {
+  text-align: center;
+  font-style: italic;
+  background-color: #b6bbd1;
+}
